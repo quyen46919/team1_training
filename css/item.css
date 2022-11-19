@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+.item__image {
+  width: 294px;
+  height: 312px;
+}
+.item__text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 0;
+}
+.item__lable {
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #592ea9;
+}
+.item__title {
+  margin-top: 20px;
+  font-family: "Sen";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.item__des {
+  margin-top: 16px;
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6d6e76;
+}
+
+/*# sourceMappingURL=item.css.map */

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 0px 80px 0px 83px;
+  box-sizing: border-box;
+  background-color: #232536;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  gap: 32px;
+}
+.header__logo {
+  font-family: "Sen";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.header__links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+.header__links * {
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+.header__subcribe {
+  padding: 16px 48px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.header__subcribe:hover {
+  background-color: #e6e6e6;
+}
+
+/*# sourceMappingURL=header.css.map */

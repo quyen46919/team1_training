@@ -1,44 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
   margin: 0;
   padding: 0;
 }
 
-.header {
+.background {
+  position: relative;
   width: 100%;
-  height: 80px;
-  padding: 0px 80px 0px 83px;
+  height: 348px;
+  background-color: #f4f0f8;
+}
+.background__content {
+  position: absolute;
+  top: 80px;
+  right: 463px;
+  bottom: 80px;
+  left: 462px;
+  z-index: 1;
+}
+.background__content--title {
+  margin: 0;
+  font-family: "Sen";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.background__content--des {
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.background__content--linkss {
+  margin-top: 32px;
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.background__content--linkss > a {
+  color: black;
+}
+
+.catalogy {
+  width: 100%;
+  margin-top: 128px;
+  padding: 0 80px 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 144px;
+}
+.catalogy__lists {
+  width: 838px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 32px;
+}
+.catalogy__icon {
+  width: 296px;
+}
+.catalogy__icon--lable {
+  font-family: "Sen";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.catalogy__item {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 24px;
+}
+.catalogy__groupIcon {
+  width: 100%;
+  height: 96px;
+  padding: 0 0 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  border: 1.5px solid #c1c1c3;
+}
+.catalogy__groupIcon:hover {
+  background-color: #ffd050;
+}
+.catalogy__groupIcon--text {
+  font-family: "Sen";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.catalogy__tags {
+  margin-top: 48px;
+}
+.catalogy__tags--lable {
+  font-family: "Sen";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.catalogy__groupTags {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+.catalogy__groupTags--item {
+  font-family: "Sen";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px 28px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.catalogy__groupTags--grow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-family: "Sen";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px 28px;
+  flex-grow: 1;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.footer {
+  margin-top: 128px;
+  width: 100%;
+  padding: 0 80px;
   box-sizing: border-box;
   background-color: #232536;
+}
+.footer__header {
+  margin-top: 128px;
+  width: 100%;
+  height: 144px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0;
   gap: 32px;
-}
-.header__logo {
-  font-size: 24px;
-  font-weight: 700;
   color: #ffffff;
 }
-.header__links {
-  flex-grow: 1;
+.footer__header--logo {
+  font-family: "Sen";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.footer__header--links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 24px;
 }
-.header__links * {
+.footer__header--links * {
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
   color: #ffffff;
-  text-decoration: none;
 }
-.header__subcribe {
+.footer__main {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  padding: 0 64px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.footer__main::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  opacity: 0.05;
+  z-index: 0;
+}
+.footer__content {
+  width: 562px;
+  font-family: "Sen";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #ffffff;
+}
+.footer__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.footer__search--input {
+  width: 323px;
+  height: 56px;
+  border: 1.5px solid #6d6e76;
+  outline: none;
+  z-index: 1;
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6d6e76;
+}
+.footer__search--input::placeholder {
+  color: #6d6e76;
+}
+.footer__search--btn {
   padding: 16px 48px;
-  background-color: #ffffff;
+  background-color: #ffd050;
   border: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
+  z-index: 1;
+}
+.footer__search--btn:hover {
+  background-color: #e8b11c;
+}
+.footer__end {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.footer__text {
+  color: #6d6e76;
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.footer__icon {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 32px;
+  color: #6d6e76;
+}
+.footer__icon i {
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
