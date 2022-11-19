@@ -1,9 +1,192 @@
 @import "./scss/base.scss";
 @import "./scss/variables/color.scss";
-@import "./scss/mixins/comoponent.scss";
+@import "./scss/mixins/button.scss";
 @import "./scss/mixins/display.scss";
 @import "./scss/mixins/typo.scss";
 
+.background {
+    position: relative;
+    width: 100%;
+    height: 348px;
+    background-color: $lavendar;
+    &__content {
+        @include position(absolute, 80px, 463px, 80px, 462px);
+        &--title {
+            margin: 0;
+            @include heading1(center);
+        }
+        &--des {
+            @include body1(center);
+        }
+        &--linkss {
+            margin-top: 32px;
+            @include cap3(center);
+            text-transform: uppercase;
+            &> a{
+                color: $black;
+            }
+        }
+    }
+}
+.catalogy {
+    width: 100%;
+    margin-top: 128px;
+    @include paddingFourFace(0, 80px, 0, 80px);
 
-
-
+    @include displayFlexCenter($gap: 144px, $align: flex-start);
+    &__lists {
+        width: 838px;
+        @include displayFelx(column, 32px, flex-start);
+    }
+    &__icon {
+        width: 296px;
+        &--lable {
+            @include heading2;
+        }
+    }
+    &__item {
+        width: 100%;
+        margin-top: 40px;
+        @include displayFelx($flex-direction: column, $gap: 24px);
+        
+    }
+    &__groupIcon {
+        width: 100%;
+        height: 96px;
+        @include paddingFourFace($left: 24px);
+        @include displayFlexCenter($justi: flex-start, $gap: 32px);
+        border: 1.5px solid #c1c1c3;
+        &:hover{
+            background-color: $yellowBg;
+        }
+        &--text {
+            @include heading3;
+        }
+    }
+    &__tags {
+        margin-top: 48px;
+        &--lable {
+            @include heading2;
+        }
+    }
+    &__groupTags {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:24px;
+        justify-content: space-between;
+    
+        &--item {
+            font-family: 'Sen';
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding: 8px 28px;
+           border: 1px solid black;
+           border-radius: 30px;
+        }
+        &--grow {
+            @include displayFlexCenter();
+            font-family: 'Sen';
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding: 8px 28px;
+            flex-grow: 1;
+           border: 1px solid black;
+           border-radius: 30px;
+        }
+    }
+}
+.footer {
+    margin-top: 128px;
+    width: 100%;
+    @include padding(0,80px); 
+    box-sizing: border-box;
+    background-color: $darkBg;
+    &__header{
+        margin-top: 128px;
+        width: 100%;
+        height: 144px;
+        @include displayFlexCenter(center, space-between);
+        gap: 32px;
+        color: $white;
+        &--logo {
+           @include heading3();
+          
+        }
+        &--links {
+            @include displayFlexCenter(center, flex-end, 24px);
+          
+            *{
+                @include body1();
+                color: $white;
+              
+            }
+        }
+    }
+    
+&__main{
+    position: relative;
+    width: 100%;
+    height: 256px;
+    @include padding(0,64px); 
+    box-sizing: border-box;
+    @include displayFlexCenter($justi:space-between);
+ 
+   &::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.05;
+    z-index: 0;
+  }
+}
+&__content{
+    width: 562px;
+    @include heading2;
+    color: $white;
+}
+&__search{
+    @include displayFlexCenter($justi:space-between,$gap:32px);
+    &--input{
+        width: 323px;
+        height: 56px;
+        border: 1.5px solid $mediumGray;
+        outline: none;
+         z-index: 1;
+         @include body1;
+         color: $mediumGray;
+         &::placeholder{
+           
+            color: $mediumGray;
+            
+         }
+    }
+    &--btn{
+        @include buttonstyle($yellowBg);
+        z-index: 1;
+    }
+}
+&__end{
+    width: 100%;
+    height: 160px;
+    @include displayFlexCenter($justi:space-between);
+   
+}
+&__text{
+    color: $mediumGray;
+    @include body1;
+}
+&__icon{
+    @include icon($mediumGray);
+}
+}

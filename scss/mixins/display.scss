@@ -4,9 +4,11 @@
     align-items: $align;
     gap: $gap;
 }
-@mixin displayFelx($flex-direction:row,$gap:0) {
+@mixin displayFelx($flex-direction:row,$gap:0,$self-aline:center) {
     display: flex;
+    
     flex-direction: $flex-direction;
+    align-self: $self-aline ;
     gap:$gap;
 }
 
@@ -24,6 +26,7 @@
 }
 @mixin paddingFourFace($top:0,$right:0,$bottom:0,$left:0) {
     padding: $top $right $bottom $left;
+    box-sizing: border-box;
 }
 @mixin  icon($color:black) {
     @include displayFelx($gap: 32px);
