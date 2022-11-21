@@ -1,0 +1,21 @@
+@mixin buttonStyle($bgColor: $yellow, $color: inherit) {
+    padding: 16px 48px;
+    background-color: $bgColor;
+    color: $color;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:hover{
+        @if $bgColor == $white {
+            background-color: darken($bgColor, 10%);
+           }@else {
+            background-color: darken($darkYellow, 10%);
+           }
+        
+        transition: all .2s ease;
+    }
+    
+}

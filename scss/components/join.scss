@@ -1,0 +1,22 @@
+.join{
+    @include displayFlexCenter();
+    flex-direction: column;
+    margin: 128px 0 64px 0;
+
+    &__heading{
+        @include heading2();
+        width: 414px;
+        text-align: center
+    }
+
+    &__desc{
+        @include body1();
+        text-align: center;
+        width: 405px;
+        margin: 16px 0 32px 0;
+    }
+
+    &__button{
+        @include buttonStyle()
+    }
+}

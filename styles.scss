@@ -1,40 +1,135 @@
-@import "../scss/variables/general.scss";
-@import "../scss/mixins/general.scss";
+@import "./scss/variables/color.scss";
+@import "./scss/variables/base.scss";
+@import "./scss/variables/font.scss";
+@import "./scss/mixins/display.scss";
+@import "./scss/mixins/typo.scss";
+@import "./scss/mixins/component.scss";
 
-body {
-    margin: 0;
-    padding: 0;
-}
-// nested scss
-.header {
-    width: 100%;
-    height: 80px;
-    padding: 0px 80px 0px 83px;
-    box-sizing: border-box;
-    background-color: $darkBg;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    @include displayFlexCenter(center, space-between);
-    gap: 32px;
+@import "./scss/components/header.scss";
+@import "./scss/components/join.scss";
+@import "./scss/components/footer.scss";
 
-    &__logo {
-        font-size: 24px;
-        font-weight: 700;
-        color: $white;
+
+.opening{
+    margin-top: 80px;
+    padding: 80px;
+    height: 519px;
+    background-color: $lavender;
+    @include displayFlexCenter($justi: space-between);
+
+    &__text-wrapper {
+        width: 52%;
     }
-    &__links {
-        flex-grow: 1;
-        // display: flex;
-        // justify-content: flex-end;
-        // gap: 24px;
-        @include displayFlexCenter(center, flex-end, 24px);
-        * {
-            color: $white;
-            text-decoration: none;
+
+    &__title {
+        @include cap3();
+    }
+
+    &__slogan {
+        @include heading2();
+        margin: 20px 0 16px 0;
+    }
+
+    &__detail {
+        @include label1();
+
+        & span{
+            color: $purple;
         }
     }
-    &__subcribe {
-        @include button();
+
+    &__description {
+        @include body1();
+        margin: 16px 0 32px 0;
+    }
+
+    &__button {
+        @include buttonStyle();
+    }
+
+}
+
+.container{
+    padding: 64px 80px 64px;
+}
+
+.post {
+
+    &__heading {
+        @include heading1();
+    }
+
+    &__line {
+        border: 1px solid $mediumGray;
+        opacity: .32;
+        margin: 32px 0 64px 0;
+    }
+
+    &__card {
+        @include displayFlexCenter($justi: start, $gap: 32px);
+        width: 86%;
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        @include cap1();
+        color: $purple;
+    }
+
+    &__heading {
+        @include heading2();
+        margin: 20px 0 16px 0;
+    }
+
+    &__desc {
+        @include body1();
+    }
+
+    &__control{
+        @include displayFlexCenter($gap: 17px);
+        @include heading4();
+        color: $mediumGray;
+        height: 42px;
+    }
+
+    &__prev.enable:hover, &__next.enable:hover{
+        cursor: pointer;
+        @include heading3();
+        color: $dark;
+        transition: all .2s ease;
+    }
+
+}
+
+.catagory{
+    &__heading{
+        @include heading2();
+        margin: 64px 0 48px 0;
+    }
+
+    &__wrapper {
+        @include displayFlexCenter(auto ,space-between, 32px);
+    }
+
+    &__item{
+        border: 1px solid #6D6E76;
+        width: 25%;
+        padding: 32px;
+
+        &:hover{
+            background-color: $yellow;
+            transition: all .3s ease;
+            border: none;
+        }
+    }
+
+    &__title{
+        @include heading3();
+        margin: 16px 0 4px 0;
+    }
+
+    &__desc{
+        @include body1();
     }
 }
+
