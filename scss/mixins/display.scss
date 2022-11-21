@@ -1,0 +1,24 @@
+@mixin displayFlexCenter($align: center, $justi: center, $gap: 0) {
+    display: flex;
+    justify-content: $justi;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin position($position:absolute, $top: auto, $right: auto, $bottom: auto, $left: auto, $z-index: 100) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+}
+
+@mixin  icon($color:black) {
+    @include displayFelx($gap: 32px);
+    color:$color;
+    i {
+        width: 16px;
+        height: 16px;
+    }
+}

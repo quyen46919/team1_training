@@ -1,23 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="./styles.css" />
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./public/icon/logo-small.svg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Finsweet | Blog</title>
+</head>
+
+<body>
+    <div class="main">
         <div class="header">
-            <div class="header__logo">{Finsweet</div>
+            <img class="header__logo" src="./public/image/Logo.png" alt="Finsweet">
             <div class="header__links">
-                <a href="#" class="header__link--home"> Home</a>
+                <a href="#" class="header__link--home">Home</a>
                 <a href="#" class="header__link--blog">Blog</a>
                 <a href="#" class="header__link--about">About us</a>
                 <a href="#" class="header__link--contact">Contact us</a>
             </div>
             <button class="header__subcribe">Subcribe</button>
-            <button class="jsakldjksadjklas">asdjlksajkd</button>
         </div>
-    </body>
+
+        <!-- opening -->
+        <div class="opening">
+            <div class="opening__text-wrapper">
+                <div class="opening__title">FEATURED POST</div>
+                <div class="opening__slogan">Step-by-step guide to choosing great font pairs</div>
+                <div class="opening__detail">By <span>Jonh Doe</span> | May 23, 2022</div>
+                <div class="opening__description">Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </div>
+                <button class="opening__button">Read More ></button>
+            </div>
+            <img src="./public/image/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png"
+                alt="" srcset="">
+        </div>
+
+        <!-- container -->
+        <div class="container">
+            <!-- posts -->
+            <div class="post">
+                <h1 class="post__heading">All posts</h1>
+                <div class="post__line"></div>
+                <div class="post__cards">
+                    <div class="post__card">
+                        <img src="./public/image/two-women-in-front-of-dry-erase-board-1181533.png" alt=""
+                            class="post__img">
+                        <div class="post__texts">
+                            <div class="post__title">STARTUP</div>
+                            <div class="post__heading">Design tips for designers that cover everything you need</div>
+                            <div class="post__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                        </div>
+                    </div>
+                    <div class="post__card">
+                        <img src="./public/image/photo-of-people-doing-handshakes-3183197.png" alt="" class="post__img">
+                        <div class="post__texts">
+                            <div class="post__title">BUSINESS</div>
+                            <div class="post__heading">How to build rapport with your web design clients</div>
+                            <div class="post__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                        </div>
+                    </div>
+                    <div class="post__card">
+                        <img src="./public/image/photo-of-woman-looking-at-man-3183173.png" alt="" class="post__img">
+                        <div class="post__texts">
+                            <div class="post__title">STARTUP</div>
+                            <div class="post__heading">Logo design trends to avoid in 2022</div>
+                            <div class="post__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                        </div>
+                    </div>
+                    <div class="post__card">
+                        <img src="./public/image/photo-of-people-walking-on-hallway-3182811.png" alt=""
+                            class="post__img">
+                        <div class="post__texts">
+                            <div class="post__title">TECHNOLOGY</div>
+                            <div class="post__heading">8 Figma design systems you can download for free today</div>
+                            <div class="post__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                        </div>
+                    </div>
+                    <div class="post__card">
+                        <img src="./public/image/two-women-in-front-of-dry-erase-board-1181533.png" alt=""
+                            class="post__img">
+                        <div class="post__texts">
+                            <div class="post__title">ECONOMY</div>
+                            <div class="post__heading">Font sizes in UI design: The complete guide to follow</div>
+                            <div class="post__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__control">
+                    <div class="post__prev enable">&#60; Prev</div>
+                    <div class="post__next enable">Next &#62;</div>
+                </div>
+            </div>
+
+            <!-- category -->
+            <div class="category">
+                <h2 class="catagory__heading">All Categories</h2>
+                <div class="catagory__wrapper">
+                    <a href="#" class="catagory__item">
+                        <img src="./public/icon/iconBusiness.png" alt="" class="catagory__icon">
+                        <div class="catagory__title">Business</div>
+                        <div class="catagory__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing
+                            elit.</div>
+                    </a>
+                    <a href="#" class="catagory__item">
+                        <img src="./public/icon/iconStartup.png" alt="" class="catagory__icon">
+                        <div class="catagory__title">Startup</div>
+                        <div class="catagory__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing
+                            elit.</div>
+                    </a>
+                    <a href="#" class="catagory__item">
+                        <img src="./public/icon/iconEcomoye.png" alt="" class="catagory__icon">
+                        <div class="catagory__title">Economy</div>
+                        <div class="catagory__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing
+                            elit.</div>
+                    </a>
+                    <a href="#" class="catagory__item">
+                        <img src="./public/icon/iconTechonogy.png" alt="" class="catagory__icon">
+                        <div class="catagory__title">Technology</div>
+                        <div class="catagory__desc">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing
+                            elit.</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- join now -->
+            <div class="join">
+                <div class="join__heading">Join our team to be a part of our story</div>
+                <div class="join__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt.</div>
+                <button class="join__button">Join Now</button>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__nav">
+                <div class="footer__logo"><a href="#"><img class="header__logo-image" src="./public/image/Logo.png"
+                            alt=""></a></div>
+                <div class="footer__nav">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">Blog</a>
+                    <a href="#" class="footer__link">About us</a>
+                    <a href="#" class="footer__link">Contact us</a>
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer__main">
+                <p class="footer__heading">Subscribe to our news letter to get latest updates and news</p>
+                <div>
+                    <input class="footer__input" type="text" name="" id="" placeholder="Enter Your Email" />
+                    <button class="footer__button">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__contact">
+                    <p class="footer__address">Finstreet 118 2561 Fintown</p>
+                    <p class="footer__email">Hello@finsweet.com 020 7993 2905</p>
+                </div>
+                <div class="footer__social-media">
+                    <a href="#">
+                        <img src="./public/icon/facebook-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./public/icon/twitter-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./public/icon/instagram-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./public/icon/linkedIn-white.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

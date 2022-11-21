@@ -1,0 +1,54 @@
+.footer{
+    padding: 56px 80px;
+    background-color: $dark;
+    color: $white;
+
+    &__nav{
+        @include displayFlexCenter($justi: space-between, $gap: 24px);
+        background: $dark;
+    }
+
+    &__main{
+        @include displayFlexCenter($justi: space-between);
+        background: #2E3040;
+        padding: 80px 64px;
+        margin: 54px 0 48px 0;
+    }
+
+    &__heading{
+        width: 45%;
+        margin: 0;
+        @include heading2();
+    }
+
+    &__input{
+        border: 1px solid $darkGray;
+        width: 323px;
+        height: 56px;
+        background: #2E3040;
+        padding-left: 24px;
+        color: $white;
+    }
+
+    &__button{
+        @include buttonStyle($color: $dark);
+        margin-left: 24px;
+
+    }
+
+    &__info{
+        @include displayFlexCenter(start, space-between);
+        
+    }
+
+    &__address, &__email{
+        @include body1();
+        margin: 0;
+    }
+
+    &__social-media{
+        @include displayFlexCenter(center, center, 28px);
+        height: 28px;
+    }
+
+}
