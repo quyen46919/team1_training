@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+
+@mixin heading1($text-aline:left) {
+    font-family: "Sen";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    text-align: $text-aline;
+}
+@mixin heading2 ($text-aline:left){
+    font-family: "Sen";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    text-align: $text-aline;
+}
+@mixin heading3 ($text-aline:left) {
+    font-family: "Sen";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+    text-align: $text-aline;
+}
+@mixin heading4 ($text-aline:left){
+    font-family: "Sen";
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: $text-aline;
+}
+@mixin heading5($text-aline:left) {
+    font-family: "Sen";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: $text-aline;
+}
+
+@mixin heading6($text-aline:left) {
+    font-family: "Sen";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: $text-aline;
+}
+
+@mixin body1($text-aline:left) {
+    font-family: "Inter","Sen";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: $text-aline;
+}
+
+@mixin body2($text-aline:left) {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: $text-aline;
+}
+
+@mixin label($text-aline:left) {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: $text-aline;
+}
+@mixin cap1($text-aline:left) {
+font-family: 'Inter','Sen';
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 3px;
+text-align: $text-aline;
+
+}
+@mixin cap3($text-aline:left) {
+font-family: 'Inter','Sen';
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 3px;
+text-align: $text-aline;
+}

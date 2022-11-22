@@ -1,0 +1,17 @@
+@import "./typo.scss";
+@mixin buttonstyle($color: $white) {
+    padding: 16px 48px;
+    background-color: $color;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+    &:hover{
+        @if $color == $white {
+            background-color: darken($color, 10%);
+           }@else {
+            background-color: darken($darkYellow, 10%);
+    }
+}
+}

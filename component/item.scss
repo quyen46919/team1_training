@@ -1,0 +1,31 @@
+
+@import "../scss/base.scss";
+@import "../scss/variables/color.scss";
+@import "../scss/mixins/button.scss";
+@import "../scss/mixins/display.scss";
+@import "../scss/mixins/typo.scss";
+.item{
+    @include displayFlexCenter($align:flex-start,$gap:32px);
+    &__image{
+        width: auto;
+        height:auto;
+    }
+    &__text{
+        @include displayFelx(column);
+        
+    }
+    &__lable{
+        @include cap1();
+        text-transform: uppercase;
+        color:$purple;
+    }
+    &__title{
+        margin-top: 20px;
+        @include heading2;
+    }
+    &__des{
+        margin-top: 16px;
+        @include body1;
+        color: $mediumGray;
+    }
+}
