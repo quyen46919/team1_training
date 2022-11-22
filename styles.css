@@ -1,44 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
   margin: 0;
   padding: 0;
 }
 
-.header {
+.background {
+  position: relative;
   width: 100%;
-  height: 80px;
-  padding: 0px 80px 0px 83px;
-  box-sizing: border-box;
-  background-color: #232536;
+  height: 550px;
+}
+.background__content {
+  position: absolute;
+  top: 128px;
+  right: 280px;
+  bottom: 128px;
+  left: 208px;
+  z-index: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 0;
   gap: 32px;
 }
-.header__logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
-}
-.header__links {
-  flex-grow: 1;
+.background__text {
+  width: 669px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
   gap: 24px;
 }
-.header__links * {
-  color: #ffffff;
-  text-decoration: none;
-}
-.header__subcribe {
-  padding: 16px 48px;
-  background-color: #ffffff;
-  border: none;
-  font-size: 18px;
+.background__text--title {
+  font-family: "Sen";
+  font-size: 48px;
   font-weight: 700;
-  line-height: 24px;
-  cursor: pointer;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.background__text--des {
+  font-family: "Inter", "Sen";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.background__text--icon {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  gap: 32px;
+  color: black;
+}
+.background__text--icon i {
+  width: 16px;
+  height: 16px;
+}
+.background__shape {
+  position: absolute;
+  top: 526px;
+  right: 208px;
+  bottom: 0;
+  left: 208px;
+  z-index: 1;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: red;
+}
+.background__shape--left {
+  width: 70%;
+  height: 100%;
+  background-color: #ffd050;
+}
+.background__shape--right {
+  width: 30%;
+  height: 100%;
+  background-color: #592ea9;
+}
+
+.myBlock {
+  padding: 128px 208px 0 208px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 64px;
+}
+.myBlock__lable {
+  font-family: "Sen";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */

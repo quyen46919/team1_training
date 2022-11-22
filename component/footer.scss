@@ -1,0 +1,94 @@
+
+@import "../scss/mixins/button.scss";
+@import "../scss/mixins/display.scss";
+@import "../scss/mixins/typo.scss";
+@import "../scss/variables/color.scss";
+
+.footer {
+    margin-top: 128px;
+    width: 100%;
+    @include padding(0,80px); 
+    box-sizing: border-box;
+    background-color: $darkBg;
+    &__header{
+        margin-top: 128px;
+        width: 100%;
+        height: 144px;
+        @include displayFlexCenter(center, space-between);
+        gap: 32px;
+        color: $white;
+        &--logo {
+           @include heading3();
+          
+        }
+        &--links {
+            @include displayFlexCenter(center, flex-end, 24px);
+          
+            *{
+                @include body1();
+                color: $white;
+              
+            }
+        }
+    }
+    
+&__main{
+    position: relative;
+    width: 100%;
+    height: 256px;
+    @include padding(0,64px); 
+    box-sizing: border-box;
+    @include displayFlexCenter($justi:space-between);
+ 
+   &::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.05;
+    z-index: 0;
+  }
+}
+&__content{
+    width: 562px;
+    @include heading2;
+    color: $white;
+}
+&__search{
+    @include displayFlexCenter($justi:space-between,$gap:32px);
+    &--input{
+        width: 323px;
+        height: 56px;
+        border: 1.5px solid $mediumGray;
+        outline: none;
+         z-index: 1;
+         @include body1;
+         color: $mediumGray;
+         &::placeholder{
+           
+            color: $mediumGray;
+            
+         }
+    }
+    &--btn{
+        @include buttonstyle($yellowBg);
+        z-index: 1;
+    }
+}
+&__end{
+    width: 100%;
+    height: 160px;
+    @include displayFlexCenter($justi:space-between);
+   
+}
+&__text{
+    color: $mediumGray;
+    @include body1;
+}
+&__icon{
+    @include icon($mediumGray);
+}
+}

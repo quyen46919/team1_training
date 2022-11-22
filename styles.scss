@@ -1,40 +1,51 @@
-@import "../scss/variables/general.scss";
-@import "../scss/mixins/general.scss";
-
-body {
-    margin: 0;
-    padding: 0;
-}
-// nested scss
-.header {
+@import "./scss/base.scss";
+@import "./scss/variables/color.scss";
+@import "./scss/mixins/button.scss";
+@import "./scss/mixins/display.scss";
+@import "./scss/mixins/typo.scss";
+.background{
+    position: relative;
     width: 100%;
-    height: 80px;
-    padding: 0px 80px 0px 83px;
-    box-sizing: border-box;
-    background-color: $darkBg;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    @include displayFlexCenter(center, space-between);
-    gap: 32px;
-
-    &__logo {
-        font-size: 24px;
-        font-weight: 700;
-        color: $white;
+    height: 550px;
+    &__content{
+        @include position(absolute,128px,280px,128px,208px);
+        @include displayFlexCenter($justi:flex-start,$gap:32px);
     }
-    &__links {
-        flex-grow: 1;
-        // display: flex;
-        // justify-content: flex-end;
-        // gap: 24px;
-        @include displayFlexCenter(center, flex-end, 24px);
-        * {
-            color: $white;
-            text-decoration: none;
+    &__text{
+        width: 669px;
+        @include displayFelx($flex-direction:column,$gap:24px);
+        &--title{
+            @include heading1;
+        }&--des{
+            @include body1;
+        }
+        &--icon{
+            @include icon;
         }
     }
-    &__subcribe {
-        @include button();
+    &__shape{
+        @include position(absolute,526px,208px,0,208px);
+       height: 24px;
+       @include displayFlexCenter();
+       background-color: red;
+       &--left{
+        width: 70%;
+        height: 100%;
+        background-color: $yellowBg;
+       }
+       &--right{
+        width: 30%;
+        height: 100%;
+        background-color:$purple;
+       }
+
+    }
+
+}
+.myBlock{
+    @include paddingFourFace(128px,208px,0,208px);
+    @include displayFelx($flex-direction:column,$gap:64px);
+    &__lable{
+        @include heading1;
     }
 }
